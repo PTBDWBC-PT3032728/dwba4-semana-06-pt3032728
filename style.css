@@ -1,0 +1,93 @@
+.logo{
+    background-color: green;
+}
+
+.menu{
+    overflow: hidden;
+    background-color: #333;
+}
+
+.menu a{
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.expansivel{
+    float: left;
+    overflow: hidden;
+}
+
+.expansivel .botaoExpansivel {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.menu a:hover, .expansivel a:hover .botaoExpansivel {
+    background-color: red;
+}
+
+.conteudoExpansivel {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.conteudoExpansivel a{
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.conteudoExpansivel a:hover {
+    background-color: #ddd;
+}
+
+.expansivel:hover .conteudoExpansivel {
+    display: block;
+}
+
+.botaoExpansivel:hover {
+    background-color: red;
+}
+
+.menu-right{
+    margin-left: 57%;
+}
+
+.main-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    text-align: center;        
+}
+
+.sejaRaro {
+    border-radius: 50%;
+    object-fit: cover; 
+}
+
+figcaption {
+    border: 1px dotted black;     /* borda pontilhada e discreta */
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#evento, #email, #celular, #perfilGithub {
+    width: 99.3%;
+}
