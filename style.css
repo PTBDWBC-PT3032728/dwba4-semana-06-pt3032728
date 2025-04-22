@@ -1,4 +1,4 @@
-.logo{
+.logo-imagem{
     background-color: green;
 }
 
@@ -34,6 +34,7 @@
 
 .menu a:hover, .expansivel a:hover .botaoExpansivel {
     background-color: red;
+    cursor: pointer;
 }
 
 .conteudoExpansivel {
@@ -55,6 +56,7 @@
 
 .conteudoExpansivel a:hover {
     background-color: #ddd;
+    cursor: pointer;
 }
 
 .expansivel:hover .conteudoExpansivel {
@@ -63,10 +65,13 @@
 
 .botaoExpansivel:hover {
     background-color: red;
+    cursor: pointer;
 }
 
 .menu-right{
-    margin-left: 57%;
+    position: fixed;
+    right: 0;
+    width: 100px;
 }
 
 .main-home {
@@ -82,12 +87,52 @@
 }
 
 figcaption {
-    border: 1px dotted black;     /* borda pontilhada e discreta */
+    border: 1px dotted black;     /* borda pontilhada */
     display: inline-block;
     width: 100%;
     margin-bottom: 10px;
 }
 
-#evento, #email, #celular, #perfilGithub {
-    width: 99.3%;
+#email, #celular, #perfilGithub, #mensagem, #telefone {
+    width: 98%;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    color: white;
+    background-color: green;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+
+fieldset {
+    border: 2px solid #353434; /* 3px de espessura, cor preta */
+}
+
+select {
+    width: 100%;
+    border: 2px solid #d4d1d1; /* 3px de espessura, cor preta */
+    padding: 10px;          /* Espaçamento interno opcional */
+    border-radius: 3px;     /* Cantos arredondados (opcional) */
+    background-color: rgb(243, 237, 237);
+    margin-top: 5px;
+}
+
+input, textarea, #assunto {
+    border-radius: 3px;
+    border: 1px solid gray;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.usuario, .senha, .botaoEntrar {
+    border: 0px;
+    margin-top: 10px;
+    padding: 20px;
+    background-color: rgb(236, 236, 236);
 }
